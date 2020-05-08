@@ -29,7 +29,11 @@ box-sizing: border-box;
   border-radius: 3px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+justify-content: space-between;
+}
+.todo-wrap{
+display: flex;
+justify-content: center;
 }
 input{
 width: 100%;

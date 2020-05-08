@@ -5,11 +5,13 @@ function Todo({ todo, index, completeTodo, deleteTodo }) {
   return (
     <div style={{ textDecoration: todo.isComleted ? 'line-through' : '' }} className="todo">
       {todo.text}
-      <div>
-        <button onClick={() => { completeTodo(index) }}>Complete</button>
-      </div>
-      <div>
-        <button onClick={() => { deleteTodo(index) }}>X</button>
+      <div className="todo-wrap">
+        <div>
+          <button onClick={() => { completeTodo(index) }}>Complete</button>
+        </div>
+        <div>
+          <button onClick={() => { deleteTodo(index) }}>X</button>
+        </div>
       </div>
     </div>
   )
